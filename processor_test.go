@@ -157,7 +157,7 @@ func TestShoudListMembersPaginated(t *testing.T) {
 				{Login: github.String("test-user-6")},
 			},
 			&github.Response{
-				NextPage: 2,
+				NextPage: 0,
 				LastPage: 2,
 			},
 			nil,
@@ -306,7 +306,7 @@ func TestShouldGetTeamsPaginated(t *testing.T) {
 				{ID: github.Int64(2), Name: github.String("test-team-6")},
 			},
 			&github.Response{
-				NextPage: 2,
+				NextPage: 0,
 				LastPage: 2,
 			},
 			nil,
@@ -411,7 +411,7 @@ func TestShouldGetTeamsMembersPaginated(t *testing.T) {
 				{Login: github.String("test-user-3")},
 			},
 			&github.Response{
-				NextPage: 2,
+				NextPage: 0,
 				LastPage: 2,
 			},
 			nil,
